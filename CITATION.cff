@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use or reference PACE in your work, please cite it as below."
+title: "PACE: Pattern for Agentic Conversational Experience"
+abstract: >
+  PACE is a design framework for guide-first interfaces where AI leads users 
+  through conversation rather than traditional navigation. The acronym works 
+  on two levels: as "Pattern for Agentic Conversational Experience" (the what) 
+  and as four behavioral principles—Proactive, Adaptive, Contextual, Efficient 
+  (the how). PACE inverts the traditional browse-and-hunt paradigm, placing 
+  an AI guide at the center of the user experience.
+authors:
+  - family-names: "Shatny"
+    given-names: "Michael"
+    orcid: "https://orcid.org/0009-0006-2011-3258"
+version: 1.0.0
+date-released: 2025-12-24
+license: CC-BY-4.0
+repository-code: "https://github.com/semanticintent/pace-pattern"
+url: "https://semanticintent.dev"
+keywords:
+  - agentic-ux
+  - conversational-commerce
+  - guide-first-design
+  - ai-patterns
+  - user-experience
+  - semantic-intent
+  - human-ai-interaction
+  - design-patterns
+references:
+  - type: article
+    authors:
+      - family-names: "Shatny"
+        given-names: "Michael"
+        orcid: "https://orcid.org/0009-0006-2011-3258"
+    title: "Semantic Intent as Single Source of Truth: Immutable Governance for AI-Assisted Development"
+    year: 2025
+    url: "https://semanticintent.dev/papers/semantic-intent-ssot"
+    doi: "10.5281/zenodo.17114972"
