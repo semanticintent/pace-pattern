@@ -49,7 +49,7 @@ The proactive version:
 
 The guide surfaces relevant options before users ask.
 
-**Scenario:** User has been discussing Twitter integration for 3 messages.
+**Scenario:** User has been discussing database optimization for 3 messages.
 
 **Reactive (Anti-pattern):**
 ```
@@ -60,10 +60,10 @@ Guide: "What would you like to know about?"
 **Proactive:**
 ```
 User: "Anything else I should know?"
-Guide: "Since you're building a Twitter bot, you might also want:
-- Rate limiting strategies (Twitter's limits are strict)
-- Error handling for API failures
-- A test account for development
+Guide: "Since you're optimizing database performance, you might also want:
+- Query plan analysis (EXPLAIN for slow queries)
+- Connection pooling (reduces overhead)
+- Automated index suggestions (Perch MCP can help)
 
 Want me to walk through any of these?"
 ```
@@ -136,7 +136,7 @@ The guide infers expertise from language patterns, questions asked, and terminol
 
 **Signals of beginner users:**
 - General questions ("What is an MCP server?")
-- Non-technical language ("the thing that connects to Twitter")
+- Non-technical language ("the thing that checks my database")
 - Uncertainty markers ("I'm not sure if...", "Is it possible to...")
 
 **Signals of expert users:**
@@ -150,22 +150,22 @@ Same information, different delivery:
 
 **To a beginner:**
 ```
-"MCP servers are like bridges that let Claude talk to other services. 
-Chirp MCP is the bridge to Twitter—it lets Claude read tweets, post 
-updates, and search hashtags on your behalf. 
+"MCP servers are like bridges that let Claude talk to other services.
+Perch MCP is the bridge to your D1 database—it lets Claude inspect
+tables, analyze schemas, and suggest performance improvements.
 
 Setting it up takes about 5 minutes. Want me to walk you through it?"
 ```
 
 **To an expert:**
 ```
-"Chirp MCP exposes Twitter API v2 endpoints through the Model Context 
-Protocol. It handles OAuth 2.0 PKCE flow internally, manages rate 
-limiting (300 requests/15min for user context), and supports both 
-read and write scopes.
+"Perch MCP exposes D1 database introspection APIs through the Model
+Context Protocol. It provides semantic anchoring for schema analysis,
+generates optimized index recommendations, and supports query plan
+visualization.
 
-The GitHub repo has the full endpoint reference. Need specifics on 
-any particular integration?"
+The tool analyzes cardinality, access patterns, and foreign key
+relationships. Need specifics on a particular optimization strategy?"
 ```
 
 #### 2.3 Progressive Disclosure
@@ -173,15 +173,15 @@ any particular integration?"
 Start simple, add depth on request.
 
 ```
-Guide: "Chirp MCP lets Claude post tweets and read timelines."
-User: "How does authentication work?"
-Guide: "It uses OAuth 2.0. When you first connect, you'll authorize 
-       the app through Twitter's standard flow, and Chirp stores 
-       the tokens securely."
-User: "What about token refresh?"
-Guide: "Chirp handles refresh automatically using the refresh_token 
-       grant. Tokens are stored in your local config, and the refresh 
-       happens transparently before expiration. You can also force a 
+Guide: "Perch MCP lets Claude analyze your database schema and suggest optimizations."
+User: "How does it connect to my database?"
+Guide: "It uses your existing Wrangler configuration. Perch reads your
+       wrangler.toml to find D1 bindings and connects securely using
+       your local credentials."
+User: "What about production databases?"
+Guide: "Perch supports both --local and production modes. For production,
+       it uses read-only queries to avoid any modifications. You can also
+       configure query timeouts and rate limits for safety. Want to 
        re-auth by deleting the stored credentials."
 ```
 
@@ -242,8 +242,8 @@ The guide maintains and uses conversation history.
 
 **Without memory (Anti-pattern):**
 ```
-User: "I'm building a Twitter bot."
-Guide: "Great! Here's info on Twitter integration..."
+User: "My database queries are slow."
+Guide: "Great! Here's info on query optimization..."
 [3 messages later]
 User: "Which MCP should I use?"
 Guide: "What kind of integration are you looking for?"
@@ -251,13 +251,13 @@ Guide: "What kind of integration are you looking for?"
 
 **With memory:**
 ```
-User: "I'm building a Twitter bot."
-Guide: "Great! Here's info on Twitter integration..."
+User: "My database queries are slow."
+Guide: "Great! Here's info on query optimization..."
 [3 messages later]
 User: "Which MCP should I use?"
-Guide: "For your Twitter bot, Chirp MCP is the right choice. 
-       It handles everything you'll need—posting, reading 
-       timelines, and searching."
+Guide: "For your database performance issues, Perch MCP is the right choice.
+       It analyzes your D1 schema and suggests exactly which indexes
+       will speed up your queries."
 ```
 
 #### 3.2 Explicit References
@@ -282,14 +282,14 @@ The guide synthesizes multiple pieces of context into coherent recommendations.
 
 ```
 "Let me summarize what I've learned:
-- You're building a Twitter bot
-- You want open source
-- You're new to MCP servers
-- Budget isn't a constraint
+- Your D1 queries are slow (2+ seconds)
+- You're using PostgreSQL-style indexes
+- You want automated recommendations
+- You prefer open source tools
 
-Based on all that, I'd recommend starting with Chirp MCP. It's 
-free, well-documented, and has the most beginner-friendly setup 
-process. Want to start the installation?"
+Based on all that, I'd recommend starting with Perch MCP. It's
+free, analyzes your schema automatically, and suggests specific
+index optimizations. Want to scan your database now?"
 ```
 
 #### 3.4 Transparent Reasoning
@@ -298,14 +298,14 @@ The guide shows how context led to conclusions.
 
 **Opaque (Anti-pattern):**
 ```
-"You should use Chirp MCP."
+"You should use Perch MCP."
 ```
 
 **Transparent:**
 ```
-"Since you mentioned building a Twitter bot and preferring open 
-source, Chirp MCP is your best fit. It's MIT-licensed and handles 
-all the Twitter API complexity for you."
+"Since you mentioned slow database queries and using D1, Perch MCP
+is your best fit. It connects to your D1 database, analyzes schema
+performance, and suggests specific indexes to speed things up."
 ```
 
 ### Implementation Patterns
@@ -330,13 +330,13 @@ The Executive Summary Panel is a visible display showing what the guide has lear
 ┌─────────────────────────────────────┐
 │ Based on our conversation:          │
 │ ─────────────────────────────────── │
-│ • Building: Twitter bot             │
+│ • Issue: Slow D1 queries (2+ sec)   │
+│ • Database: D1 (2M rows)            │
+│ • Experience: Intermediate          │
 │ • Preference: Open source           │
-│ • Experience: Beginner              │
-│ • Budget: Flexible                  │
 │                                     │
-│ 💡 Recommendation: Chirp MCP        │
-│    (Free, well-documented, 5min)    │
+│ 💡 Recommendation: Perch MCP        │
+│    (Schema analysis, auto-indexing) │
 └─────────────────────────────────────┘
 ```
 
@@ -401,19 +401,20 @@ Put the conclusion first, explanation second.
 
 **Buried answer (Anti-pattern):**
 ```
-"There are several MCP servers available, each with different 
-capabilities. When choosing, you should consider your use case, 
-technical requirements, and whether you need real-time data. 
-For Twitter integration specifically, the options include... 
-After careful consideration, Chirp MCP would be the best choice."
+"There are several MCP servers available, each with different
+capabilities. When choosing, you should consider your use case,
+technical requirements, and whether you need real-time data.
+For database performance specifically, the options include...
+After careful consideration, Perch MCP would be the best choice."
 ```
 
 **Answer-first:**
 ```
-"Chirp MCP. It's built specifically for Twitter, handles all 
-the API complexity, and you can set it up in 5 minutes.
+"Perch MCP. It's built specifically for D1 schema analysis, finds
+missing indexes automatically, and you can scan your database in
+under 5 minutes.
 
-Want the quick-start guide?"
+Want to start the analysis now?"
 ```
 
 #### 4.2 Eliminate Filler
@@ -422,19 +423,19 @@ Remove words that don't add meaning.
 
 **With filler (Anti-pattern):**
 ```
-"That's a great question! I'd be happy to help you with that. 
-So basically, what you're looking for is something that can 
-connect to Twitter. Well, the good news is that we have exactly 
-what you need. It's called Chirp MCP, and it's really quite 
+"That's a great question! I'd be happy to help you with that.
+So basically, what you're looking for is something that can
+analyze your database. Well, the good news is that we have exactly
+what you need. It's called Perch MCP, and it's really quite
 excellent for this purpose."
 ```
 
 **Without filler:**
 ```
-"Chirp MCP connects Claude to Twitter. It handles posting, 
-reading timelines, and search. Free and open source.
+"Perch MCP analyzes D1 databases. It inspects schema, suggests
+indexes, and identifies performance bottlenecks. Free and open source.
 
-Ready to set it up?"
+Ready to scan your database?"
 ```
 
 #### 4.3 Clear Next Actions
@@ -461,21 +462,22 @@ Match response length to question complexity.
 
 **Simple question → Simple answer:**
 ```
-User: "Is Chirp MCP free?"
+User: "Is Perch MCP free?"
 Guide: "Yes, MIT license. Completely free."
 ```
 
 **Complex question → Structured answer:**
 ```
-User: "How does Chirp MCP handle rate limiting?"
-Guide: "Chirp manages rate limits automatically:
+User: "How does Perch MCP determine which indexes to recommend?"
+Guide: "Perch analyzes multiple factors:
 
-- Tracks your remaining quota in real-time
-- Queues requests when approaching limits
-- Uses exponential backoff on 429 responses
-- Respects Twitter's 300 requests/15min user limit
+- Query patterns from your application logs
+- Column cardinality (uniqueness of values)
+- Foreign key relationships
+- Table size and access frequency
 
-You don't need to handle this in your code—Chirp does it internally."
+It then ranks recommendations by estimated performance impact.
+High-impact indexes are flagged with 🔥 for priority attention."
 ```
 
 ### Implementation Patterns
@@ -511,26 +513,26 @@ You don't need to handle this in your code—Chirp does it internally."
 
 The four principles work together. Here's an example that demonstrates all four:
 
-**User:** "I want to build something with Twitter but I don't know where to start."
+**User:** "I want to get better at managing my fantasy hockey team but don't know where to start."
 
 **PACE Response:**
 
-> "Start with Chirp MCP—it's our Twitter integration, and it's free. [**Efficient**: direct answer]
+> "Start with Chirp MCP—it's our fantasy hockey intelligence tool, and it's free. [**Efficient**: direct answer]
 >
 > Since you're new to this, here's the simple path: [**Adaptive**: recognized beginner]
-> 1. Install Chirp (5 minutes)
-> 2. Connect your Twitter account
-> 3. Try posting a test tweet from Claude
+> 1. Install Chirp with: `npx @modelcontextprotocol/create-server chirp`
+> 2. Connect your Yahoo Fantasy account (OAuth flow, 2 minutes)
+> 3. Ask Claude: 'Check my roster for injured players'
 >
-> I can walk you through each step when you're ready. [**Proactive**: offers next step]
+> You'll have AI-powered team insights in under 5 minutes. [**Proactive**: offers next step]
 >
-> Also, since you mentioned building 'something'—what kind of project are you thinking? A bot? Analytics? Something else? That'll help me guide you better." [**Contextual**: references their words, asks for more context]
+> Also, since you mentioned 'managing'—are you struggling with specific areas like lineup optimization, waiver picks, or trade decisions? That'll help me guide you better." [**Contextual**: references their words, asks for more context]
 
 This response:
-- **Proactive**: Offers guidance and next steps
-- **Adaptive**: Recognizes beginner status, simplifies
-- **Contextual**: References "something," asks for more
-- **Efficient**: Direct answer, clear structure, specific actions
+- **Proactive**: Offers guidance and specific next steps with commands
+- **Adaptive**: Recognizes beginner status, provides concrete example
+- **Contextual**: References "managing," asks for specific pain points
+- **Efficient**: Direct answer, real commands, clear structure
 
 ---
 

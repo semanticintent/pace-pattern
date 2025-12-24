@@ -113,7 +113,7 @@ The guide matches the user's expertise level and adjusts communication according
 
 **To a beginner:** "MCP servers let Claude connect to external services. Think of them as bridges between Claude and the tools you already use."
 
-**To an expert:** "Chirp MCP exposes Twitter's v2 API endpoints. Supports OAuth 2.0 PKCE flow, rate limiting is handled internally."
+**To an expert:** "Perch MCP exposes D1 database introspection APIs. Supports semantic anchoring, schema analysis, and query optimization—ideal for performance debugging."
 
 **Implementation:**
 - Detects expertise from language patterns
@@ -125,8 +125,8 @@ The guide matches the user's expertise level and adjusts communication according
 
 The guide remembers the conversation and references relevant information.
 
-**Without context:** "Here are all our products..."  
-**With context:** "Since you mentioned building a Twitter bot and preferring open source, Chirp MCP is your best option. It's free and well-documented."
+**Without context:** "Here are all our products..."
+**With context:** "Since you mentioned slow database queries and using D1, Perch MCP is your best option. It analyzes your schema and suggests index optimizations automatically."
 
 **Implementation:**
 - Maintains conversation history
@@ -140,7 +140,7 @@ The guide is concise and actionable. Every response moves the user forward.
 
 **Inefficient:** "There are many considerations when choosing an MCP server. First, you should think about your use case. Then, consider the technical requirements. After that..."
 
-**Efficient:** "For Twitter integration: Chirp MCP. Free, open source, 5-minute setup. Want the install guide?"
+**Efficient:** "For database performance: Perch MCP. Analyzes your D1 schema, suggests indexes, free. Want to scan your database now?"
 
 **Implementation:**
 - No filler, no excessive caveats
