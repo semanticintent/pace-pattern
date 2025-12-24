@@ -1,6 +1,6 @@
 # MillPond: PACE Reference Implementation
 
-**Live:** [millpond-storefront.pages.dev](https://millpond-storefront.pages.dev)
+**Live:** [millpond.dev](https://millpond.dev)
 **Status:** Production
 **Updated:** December 24, 2025
 
