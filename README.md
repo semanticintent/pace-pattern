@@ -178,13 +178,15 @@ MillPond is the first implementation of the PACE pattern—a conversational stor
 
 ### Latest Features (December 2025)
 
-| Feature | Description | Impact |
-|---------|-------------|--------|
-| **Executive Summary Panel** ⭐ | Live display of what the guide knows | +47% trust score |
-| **Animated Cormorant** 🐦 | Flying entrance + thinking states + easter eggs | 3x social sharing |
-| **Dynamic Pills** | Context-aware interaction shortcuts | +65% engagement |
-| **Social Proof** | Real-time activity signals | +23% conversion |
-| **Inactivity Prompts** | Gentle nudges after 5s of hesitation | 42% recovery rate |
+| Feature | Description | Key Benefit |
+|---------|-------------|-------------|
+| **Executive Summary Panel** ⭐ | Live display of what the guide knows | Transparency & trust |
+| **Animated Cormorant** 🐦 | Flying entrance + thinking states + easter eggs | Memorable brand experience |
+| **Dynamic Pills** | Context-aware interaction shortcuts | Low-friction engagement |
+| **Social Proof** | Real-time activity signals | Validation & confidence |
+| **Inactivity Prompts** | Gentle nudges after 5s of hesitation | Proactive assistance |
+
+*Note: MillPond is in early deployment. See [METRICS.md](METRICS.md) for projected impact data.*
 
 ### The Metaphor
 

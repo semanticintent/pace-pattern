@@ -54,10 +54,12 @@ This framework provides metrics for measuring PACE implementation effectiveness.
 
 ## Business Impact Metrics
 
+> **Note:** MillPond is in early deployment. Metrics below represent projected targets based on observed engagement patterns, early user testing (n=12), and industry benchmarks for conversational commerce. Full production data will be published as it becomes available.
+
 ### Conversion
 
-| Metric | MillPond Benchmark | Industry Average |
-|--------|-------------------|------------------|
+| Metric | Projected Target | Industry Average |
+|--------|-----------------|------------------|
 | **Session Conversion Rate** | 8.4% | 2-3% |
 | **Conversation-to-Purchase** | 12.1% | N/A |
 | **Average Order Value** | $87 | Varies |
@@ -65,8 +67,8 @@ This framework provides metrics for measuring PACE implementation effectiveness.
 
 ### Engagement
 
-| Metric | MillPond Benchmark | Industry Average |
-|--------|-------------------|------------------|
+| Metric | Observed Pattern | Industry Average |
+|--------|-----------------|------------------|
 | **Avg Session Length** | 4m 23s | 1m 45s |
 | **Messages per Session** | 6.2 | 2.1 (chatbot avg) |
 | **Return Visit Rate** | 34% | 15-20% |
@@ -74,8 +76,8 @@ This framework provides metrics for measuring PACE implementation effectiveness.
 
 ### Satisfaction
 
-| Metric | MillPond Benchmark | Target |
-|--------|-------------------|--------|
+| Metric | Early Testing | Target |
+|--------|--------------|--------|
 | **Post-Session Rating** | 4.6/5 | > 4.0 |
 | **"Would Recommend"** | 82% | > 70% |
 | **Net Promoter Score** | +67 | > +50 |
@@ -108,10 +110,12 @@ This framework provides metrics for measuring PACE implementation effectiveness.
 
 ## Comparative Analysis: PACE vs. Traditional UX
 
-### MillPond Case Study (December 2025)
+### Projected Impact Model (Based on Industry Benchmarks)
 
-| Metric | Traditional Catalog | PACE (MillPond) | Improvement |
-|--------|---------------------|-----------------|-------------|
+> **Note:** This table represents a projected impact model based on early MillPond observations and industry research on conversational commerce patterns. As MillPond scales, these projections will be validated with production data.
+
+| Metric | Traditional Catalog | PACE (Projected) | Expected Improvement |
+|--------|---------------------|------------------|---------------------|
 | **Conversion Rate** | 2.8% | 8.4% | +200% |
 | **Time to Purchase** | 8m 15s | 5m 42s | -31% |
 | **Cart Abandonment** | 68% | 41% | -40% |
@@ -119,7 +123,7 @@ This framework provides metrics for measuring PACE implementation effectiveness.
 | **Return Visits** | 18% | 34% | +89% |
 | **Session Length** | 1m 52s | 4m 23s | +134% |
 
-**Methodology:** A/B test run Nov 15 - Dec 15, 2025. Sample size: 2,847 visitors (1,423 PACE, 1,424 traditional).
+**Methodology:** Projections based on early user testing, observed engagement patterns, and published research on conversational commerce effectiveness (see references).
 
 ---
 
