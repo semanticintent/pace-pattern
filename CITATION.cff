@@ -12,12 +12,12 @@ authors:
   - family-names: "Shatny"
     given-names: "Michael"
     orcid: "https://orcid.org/0009-0006-2011-3258"
-version: 1.0.0
+version: 1.0.1
 date-released: 2025-12-24
 license: CC-BY-4.0
 repository-code: "https://github.com/semanticintent/pace-pattern"
 url: "https://semanticintent.dev"
-doi: "10.5281/zenodo.18048903"
+doi: "10.5281/zenodo.18049371"
 keywords:
   - agentic-ux
   - conversational-commerce
