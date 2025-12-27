@@ -20,7 +20,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Reference Implementation
 
-- MillPond live at [millpond.dev](https://millpond.dev)
+- **Interactive Demo:** [demo.millpond.dev](https://demo.millpond.dev) - PACE 1.0.1 pattern showcase
+- **Production:** [millpond.dev](https://millpond.dev) - Live storefront
 - Cormorant guide with PACE-compliant system prompt
 - Three-panel layout (sidebar, chat, context)
 - Clickable pills and quick action cards

@@ -1,8 +1,9 @@
 # MillPond: PACE Reference Implementation
 
-**Live:** [millpond.dev](https://millpond.dev)
+**Interactive Demo:** [demo.millpond.dev](https://demo.millpond.dev) - PACE 1.0.1 pattern showcase
+**Production Site:** [millpond.dev](https://millpond.dev) - Live storefront with AI chat
 **Status:** Production
-**Updated:** December 24, 2025
+**Updated:** December 27, 2025
 
 ---
 

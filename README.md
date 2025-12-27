@@ -2,7 +2,8 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18049371.svg)](https://doi.org/10.5281/zenodo.18049371)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![Reference Implementation](https://img.shields.io/badge/reference-MillPond-blue)](https://millpond.dev)
+[![Demo](https://img.shields.io/badge/demo-PACE%201.0.1-blue)](https://demo.millpond.dev)
+[![Production](https://img.shields.io/badge/production-MillPond-green)](https://millpond.dev)
 
 **A framework for guide-first interfaces where AI leads users through conversation rather than traditional navigation.**
 
@@ -174,7 +175,8 @@ Interactive elements (pills, cards, suggestions) give users permission to engage
 
 MillPond is the first implementation of the PACE pattern—a conversational storefront where an AI guide named **Cormorant** helps users discover tools and products.
 
-**Live:** [millpond.dev](https://millpond.dev)
+- **Interactive Demo:** [demo.millpond.dev](https://demo.millpond.dev) - PACE 1.0.1 pattern showcase
+- **Production Site:** [millpond.dev](https://millpond.dev) - Live storefront with AI chat
 
 ### Latest Features (December 2025)
 
