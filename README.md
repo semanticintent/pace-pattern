@@ -171,7 +171,36 @@ Interactive elements (pills, cards, suggestions) give users permission to engage
 
 ---
 
-## Reference Implementation: MillPond
+## Cross-Domain Transfer
+
+A key property of PACE is that its principles are **domain-agnostic**. The same four behaviors that make AI guidable also make people guidable.
+
+### The Insight
+
+In PACE UX: *The user guides. The AI follows well.*
+In PACE Hiring: *The employer guides. The candidate follows well.*
+
+The pattern transfers because "guidability" is universal — whether the subject is software or a person, the same principles create value:
+
+| Principle | PACE UX (AI) | PACE Hiring (People) |
+|-----------|-------------|---------------------|
+| **Proactive** | AI suggests next steps, anticipates needs | Candidate anticipates needs, doesn't wait for instructions |
+| **Adaptive** | AI adjusts to user expertise level | Candidate adjusts to team culture and context |
+| **Contextual** | AI remembers conversation, builds on it | Candidate absorbs tribal knowledge, builds on it |
+| **Efficient** | AI moves toward actionable output | Candidate ships results, no wasted effort |
+
+### Current Applications
+
+| Application | Domain | Description | Link |
+|------------|--------|-------------|------|
+| **PACE UX** | Conversational AI | Guide-first interface design | [pace.cormorantforaging.dev](https://pace.cormorantforaging.dev) |
+| **PACE Hiring** | Talent & Hiring | Hire for operating philosophy, not just credentials | [pacehiring.cormorantforaging.dev](https://pacehiring.cormorantforaging.dev) |
+
+The pattern is extensible. Any domain that requires "guidable experiences" — education, customer support, product management — can apply PACE principles.
+
+---
+
+## Implementation: MillPond (UX)
 
 MillPond is the first implementation of the PACE pattern—a conversational storefront where an AI guide named **Cormorant** helps users discover tools and products.
 
@@ -203,6 +232,18 @@ MillPond uses a consistent foraging metaphor inspired by watching cormorants fis
 **The greeting:** *"Welcome to the pond. What are you fishing for?"*
 
 This biological metaphor is [documented in detail](INSPIRATION.md) with research citations.
+
+---
+
+## Implementation: PACE Hiring (Talent)
+
+PACE Hiring transfers the pattern from UX to talent acquisition. Instead of filtering candidates by credentials alone, employers evaluate how candidates **operate** — are they proactive, adaptive, contextual, and efficient?
+
+- **Site:** [pacehiring.cormorantforaging.dev](https://pacehiring.cormorantforaging.dev)
+- **For Candidates:** Framework to position yourself by how you work, not just what you know
+- **For Employers:** Hiring philosophy that identifies candidates who integrate faster and compound value
+
+The transfer validates PACE as a **behavioral design pattern** rather than a UX-specific tool.
 
 ---
 
@@ -264,11 +305,12 @@ Semantic Intent (Philosophy)
     ├── Pattern for Agentic Conversational Experience
     ├── Proactive, Adaptive, Contextual, Efficient
     └── Guide-first interaction design
-              ↓
-        MillPond (Implementation)
-        ├── Cormorant as guide
-        ├── Conversation over catalog
-        └── "Ask, don't browse"
+          ↓               ↓
+    MillPond (UX)    PACE Hiring (Talent)
+    ├── AI as guide   ├── Employer as guide
+    ├── Conversation  ├── Operating philosophy
+    └── "Ask, don't   └── "Guide candidates
+         browse"           into value"
 ```
 
 For more on Semantic Intent, see: [Semantic Intent as Single Source of Truth](https://semanticintent.dev/papers/semantic-intent-ssot) (DOI: [10.5281/zenodo.17114972](https://doi.org/10.5281/zenodo.17114972))
@@ -332,8 +374,7 @@ Under the following terms:
 
 ## Author
 
-**Michael Shatny**  
-Ontario, Canada  
+**Michael Shatny**
 ORCID: [0009-0006-2011-3258](https://orcid.org/0009-0006-2011-3258)
 
 Part of the [Semantic Intent](https://semanticintent.dev) ecosystem.

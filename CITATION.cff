@@ -12,8 +12,8 @@ authors:
   - family-names: "Shatny"
     given-names: "Michael"
     orcid: "https://orcid.org/0009-0006-2011-3258"
-version: 1.0.1
-date-released: 2025-12-24
+version: 1.1.0
+date-released: 2026-03-07
 license: CC-BY-4.0
 repository-code: "https://github.com/semanticintent/pace-pattern"
 url: "https://semanticintent.dev"
@@ -27,6 +27,9 @@ keywords:
   - semantic-intent
   - human-ai-interaction
   - design-patterns
+  - cross-domain-transfer
+  - talent-acquisition
+  - hiring-framework
 references:
   - type: article
     authors:
@@ -37,3 +40,11 @@ references:
     year: 2025
     url: "https://semanticintent.dev/papers/semantic-intent-ssot"
     doi: "10.5281/zenodo.17114972"
+  - type: software
+    authors:
+      - family-names: "Shatny"
+        given-names: "Michael"
+        orcid: "https://orcid.org/0009-0006-2011-3258"
+    title: "PACE Hiring: Cross-Domain Transfer of the PACE Pattern to Talent Acquisition"
+    year: 2026
+    url: "https://pacehiring.cormorantforaging.dev"
