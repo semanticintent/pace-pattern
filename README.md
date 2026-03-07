@@ -194,7 +194,7 @@ The pattern transfers because "guidability" is universal — whether the subject
 | Application | Domain | Description | Link |
 |------------|--------|-------------|------|
 | **PACE UX** | Conversational AI | Guide-first interface design | [pace.cormorantforaging.dev](https://pace.cormorantforaging.dev) |
-| **PACE Hiring** | Talent & Hiring | Hire for operating philosophy, not just credentials | [pacehiring.cormorantforaging.dev](https://pacehiring.cormorantforaging.dev) |
+| **PACE Hiring** | Talent & Hiring | Hire for operating philosophy, not just credentials | [pace-hiring.cormorantforaging.dev](https://pace-hiring.cormorantforaging.dev) |
 
 The pattern is extensible. Any domain that requires "guidable experiences" — education, customer support, product management — can apply PACE principles.
 
@@ -239,7 +239,7 @@ This biological metaphor is [documented in detail](INSPIRATION.md) with research
 
 PACE Hiring transfers the pattern from UX to talent acquisition. Instead of filtering candidates by credentials alone, employers evaluate how candidates **operate** — are they proactive, adaptive, contextual, and efficient?
 
-- **Site:** [pacehiring.cormorantforaging.dev](https://pacehiring.cormorantforaging.dev)
+- **Site:** [pace-hiring.cormorantforaging.dev](https://pace-hiring.cormorantforaging.dev)
 - **For Candidates:** Framework to position yourself by how you work, not just what you know
 - **For Employers:** Hiring philosophy that identifies candidates who integrate faster and compound value
 

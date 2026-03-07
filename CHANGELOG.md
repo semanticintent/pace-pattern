@@ -23,7 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Cross-Domain Application
 
-- **PACE Hiring Site:** [pacehiring.cormorantforaging.dev](https://pacehiring.cormorantforaging.dev) - Live implementation
+- **PACE Hiring Site:** [pace-hiring.cormorantforaging.dev](https://pace-hiring.cormorantforaging.dev) - Live implementation
 - Candidate positioning guide (how to demonstrate PACE behaviors)
 - Employer hiring framework (evaluate for operating philosophy, not just credentials)
 - Validates PACE as a **behavioral design pattern** rather than a UX-specific tool
