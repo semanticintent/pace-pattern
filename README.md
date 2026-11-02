@@ -2,8 +2,8 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18049371.svg)](https://doi.org/10.5281/zenodo.18049371)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![Demo](https://img.shields.io/badge/demo-PACE%201.0.1-blue)](https://demo.millpond.dev)
-[![Production](https://img.shields.io/badge/production-MillPond-green)](https://millpond.dev)
+[![Demo](https://img.shields.io/badge/demo-PACE%201.0.1-blue)](https://millpond-demo.semanticintent.dev)
+[![Production](https://img.shields.io/badge/production-MillPond-green)](https://millpond.semanticintent.dev)
 
 **A framework for guide-first interfaces where AI leads users through conversation rather than traditional navigation.**
 
@@ -193,8 +193,8 @@ The pattern transfers because "guidability" is universal — whether the subject
 
 | Application | Domain | Description | Link |
 |------------|--------|-------------|------|
-| **PACE UX** | Conversational AI | Guide-first interface design | [pace.cormorantforaging.dev](https://pace.cormorantforaging.dev) |
-| **PACE Hiring** | Talent & Hiring | Hire for operating philosophy, not just credentials | [pace-hiring.cormorantforaging.dev](https://pace-hiring.cormorantforaging.dev) |
+| **PACE UX** | Conversational AI | Guide-first interface design | [pace.semanticintent.dev](https://pace.semanticintent.dev) |
+| **PACE Hiring** | Talent & Hiring | Hire for operating philosophy, not just credentials | [pace-hiring.semanticintent.dev](https://pace-hiring.semanticintent.dev) |
 
 The pattern is extensible. Any domain that requires "guidable experiences" — education, customer support, product management — can apply PACE principles.
 
@@ -204,8 +204,8 @@ The pattern is extensible. Any domain that requires "guidable experiences" — e
 
 MillPond is the first implementation of the PACE pattern—a conversational storefront where an AI guide named **Cormorant** helps users discover tools and products.
 
-- **Interactive Demo:** [demo.millpond.dev](https://demo.millpond.dev) - PACE 1.0.1 pattern showcase
-- **Production Site:** [millpond.dev](https://millpond.dev) - Live storefront with AI chat
+- **Interactive Demo:** [millpond-demo.semanticintent.dev](https://millpond-demo.semanticintent.dev) - PACE 1.0.1 pattern showcase
+- **Production Site:** [millpond.semanticintent.dev](https://millpond.semanticintent.dev) - Live PACE showcase with AI chat
 
 ### Latest Features (December 2025)
 
@@ -239,7 +239,7 @@ This biological metaphor is [documented in detail](INSPIRATION.md) with research
 
 PACE Hiring transfers the pattern from UX to talent acquisition. Instead of filtering candidates by credentials alone, employers evaluate how candidates **operate** — are they proactive, adaptive, contextual, and efficient?
 
-- **Site:** [pace-hiring.cormorantforaging.dev](https://pace-hiring.cormorantforaging.dev)
+- **Site:** [pace-hiring.semanticintent.dev](https://pace-hiring.semanticintent.dev)
 - **For Candidates:** Framework to position yourself by how you work, not just what you know
 - **For Employers:** Hiring philosophy that identifies candidates who integrate faster and compound value
 

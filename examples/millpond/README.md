@@ -1,7 +1,7 @@
 # MillPond: PACE Reference Implementation
 
-**Interactive Demo:** [demo.millpond.dev](https://demo.millpond.dev) - PACE 1.0.1 pattern showcase
-**Production Site:** [millpond.dev](https://millpond.dev) - Live storefront with AI chat
+**Interactive Demo:** [millpond-demo.semanticintent.dev](https://millpond-demo.semanticintent.dev) - PACE 1.0.1 pattern showcase
+**Production Site:** [millpond.semanticintent.dev](https://millpond.semanticintent.dev) - Live PACE showcase with AI chat
 **Status:** Production
 **Updated:** December 27, 2025
 
